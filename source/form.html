@@ -27,6 +27,108 @@
       </nav>
     </header>
 
+    <main class="page-main">
+
+      <h1 class="page-main__title">Подбор программы</h1>
+
+      <section class="program">
+        <p class="program__text"></p>
+        <form class="program__form" action="https://echo.htmlacademy.ru" method="post">
+          <ul class="program__list program-profile">
+            <li class="program-profile__item">
+              <label class="program-profile__label">Имя:*
+                <input type="text" name="profile" placeholder="Барсик">
+              </label>
+            </li>
+            <li class="program-profile__item">
+              <label class="program-profile__label">Вес (кг):*
+                <input type="text" name="profile" placeholder="7">
+              </label>
+            </li>
+            <li class="program-profile__item">
+              <label class="program-profile__label">Возраст (лет):*
+                <input type="text" name="profile" placeholder="7">
+              </label>
+            </li>
+          </ul>
+          <ul class="program__list program-option">
+            <li class="program-option__item">
+              <label class="program-option__label">Похудение
+                <input type="radio" name="option">
+              </label>
+            </li>
+            <li class="program-option__item">
+              <label class="program-option__label">Набор массы
+                <input type="radio" name="option">
+              </label>
+            </li>
+            <li class="program-option__item">
+              <label class="program-option__label">Не знаю (нужен ваш совет)
+                <input type="radio" name="option">
+              </label>
+            </li>
+          </ul>
+          <fieldset class="program__contacts program-contacts">
+            <legend class="program-contacts__title">Контактные данные (владельца кота)</legend>
+            <ul class="program__list program-contacts__list">
+              <li class="program-contacts__item">
+                <label class="program-contacts__label">E-mail:*
+                  <input type="email" name="contacts" placeholder="kuklachev@gmail.com">
+                </label>
+              </li>
+              <li class="program-contacts__item">
+                <label class="program-contacts__label">Телефон:*
+                  <input type="email" name="contacts" placeholder="9 (960) 900-60-90">
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="program__comment program-comment">
+            <legend class="program-comment__title">Комментарий</legend>
+            <textarea name="name" rows="8" cols="40" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </fieldset>
+          <fieldset class="program__other program-other">
+            <legend class="program-other__title">Дополнительно</legend>
+            <ul class="program__list program-other__list">
+              <li class="program-other__item">
+                <label class="program-other__label">Сахарозаменитель
+                  <input type="checkbox" name="sugar" checked>
+                </label>
+              </li>
+              <li class="program-other__item">
+                <label class="program-other__label">Питьевая вода
+                  <input type="checkbox" name="water">
+                </label>
+              </li>
+              <li class="program-other__item">
+                <label class="program-other__label">Молоко
+                  <input type="checkbox" name="milk">
+                </label>
+              </li>
+              <li class="program-other__item">
+                <label class="program-other__label">Витамины
+                  <input type="checkbox" name="vitamins">
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit" name="button">Отправить заявку</button>
+          <small class="program__legend">
+            <sup>*</sup> — Обязательные поля
+          </small>
+        </form>
+      </section>
+
+      <section class="contacts">
+        <h2 class="visually-hidden"></h2>
+        <div class="contacts__wrapper">
+          <b class="contacts__text">Приглашаем к сотрудничеству дилеров!</b>
+          <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <span class="contacts__map"></span>
+        </div>
+      </section>
+    </main>
+
     <footer class="page-footer">
       <a class="page-footer__logo" href="#">
         <img class="page-footer__logo-image" src="http://placehold.it/150x100" alt="">
