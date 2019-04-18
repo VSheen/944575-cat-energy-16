@@ -1,0 +1,29 @@
+.contacts {
+  &--catalog {
+    background-color: @white-three-color;
+  }
+}
+
+.contacts__wrapper {
+
+}
+
+.contacts__text {
+  font-size: @body-font-size * 1.143;
+  line-height: @body-line-height * 1.112;
+  color: @black-two-color;
+  .Oswald-regular();
+  text-transform: uppercase;
+}
+
+.contacts__adress {
+  font-size: @body-font-size;
+  line-height: @body-line-height * 1.112;
+  .ArialMT();
+}
+
+.contacts__map {
+  display: block;
+  .size(320px, 400px);
+  background-image: url("../../img/bg-map-mobile@1x.png");
+}
