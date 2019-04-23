@@ -1,52 +1,107 @@
 .description {
-
 }
 
 .description__title {
-  font-size: @body-font-size * 2.572;
-  line-height: @body-line-height * 3.334;
+  margin: 0;
+  padding: 0;
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 1.67;
   color: @black-two-color;
-  .Oswald-regular();
-}
+  @media(min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 1;
+  }
 
-.description__wrapper {
-
+  @media(min-width: @desktop-width) {
+  }
 }
 
 .description__list {
+  margin: 0;
+  padding: 0;
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  @media(min-width: @tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  @media(min-width: @desktop-width) {
+  }
 }
 
 .description__item {
+  display: flex;
+  @media(min-width: @tablet-width) {
+    width: 300px;
+    min-height: 300px;
+    flex-direction: column;
+  }
 
+  @media(min-width: @desktop-width) {
+  }
 }
 
 .description__logo {
   display: block;
   background-color: @leaf-color;
-  .size(60px, 60px);
+  width: 60px;
+  height: 60px;
   &--diet {
-    background-image: url("../../img/advantage-leaf@1x.png");
+    background-image: url("../img/advantage-leaf@1x.png");
     background-repeat: no-repeat;
     background-position: center;
   }
   &--water {
-    background-image: url("../../img/advantage-powder@1x.png");
+    background-image: url("../img/advantage-powder@1x.png");
     background-repeat: no-repeat;
     background-position: center;
   }
   &--food {
-    background-image: url("../../img/advantage-dining@1x.png");
+    background-image: url("../img/advantage-dining@1x.png");
     background-repeat: no-repeat;
     background-position: center;
   }
   &--time {
-    background-image: url("../../img/advantage-clock@1x.png");
+    background-image: url("../img/advantage-clock@1x.png");
     background-repeat: no-repeat;
     background-position: center;
+  }
+  @media(min-width: @tablet-width) {
+    width: 80px;
+    height: 80px;
+  }
+
+  @media(min-width: @desktop-width) {
   }
 }
 
 .description__text {
-  .ArialMT();
+  width: 200px;
+  font-family: Arial, sans-serif;
+  line-height: 1.29;
+  @media(min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  @media(min-width: @desktop-width) {
+  }
+}
+
+.description__number {
+  font-size: 0;
+  @media(min-width: @tablet-width) {
+    z-index: -1;
+    position: absolute;
+    margin-top: -40px;
+    margin-left: 100px;
+    font-size: 281px;
+    color: @white-three-color;
+  }
+
+  @media(min-width: @desktop-width) {
+  }
 }

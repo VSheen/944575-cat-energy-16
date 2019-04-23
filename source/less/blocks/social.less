@@ -3,7 +3,11 @@
 }
 
 .social__list {
+  margin: 0;
+  padding: 0;
   list-style: none;
+  display: flex;
+  justify-content: space-around;
 }
 
 .social__item {
@@ -14,22 +18,25 @@
   font-size: 0;
   &--vk {
     display: block;
-    background-image: url("../../img/icon-vk-mobile.svg");
+    background-image: url("../img/icon-vk-mobile.svg");
     background-repeat: no-repeat;
-    .size(22px, 12px);
+    width: 22px;
+    height: 12px;
   }
 
   &--in {
     display: block;
-    background-image: url("../../img/icon-insta-mobile.svg");
+    background-image: url("../img/icon-insta-mobile.svg");
     background-repeat: no-repeat;
-    .size(17px, 17px);
+    width: 17px;
+    height: 17px;
   }
 
   &--fb {
     display: block;
-    background-image: url("../../img/icon-fb-mobile.svg");
+    background-image: url("../img/icon-fb-mobile.svg");
     background-repeat: no-repeat;
-    .size(10px, 19px);
+    width: 10px;
+    height: 19px;
   }
 }

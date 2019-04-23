@@ -1,15 +1,36 @@
 .page-footer {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
+  @media (min-width: @tablet-width) {
+    width: 708px;
+    padding: 0 30px;
+  }
+
+  @media(min-width: @desktop-width) {
+    width: 1220px;
+    padding: 0 20px;
+  }
 }
 
 .page-footer__wrapper {
+  display: flex;
+  flex-direction: column;
   background-color: @white-three-color;
+  @media(min-width: @tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 150px;
+  }
+
+  @media(min-width: @desktop-width) {
+  }
 }
 
 .page-footer__logo {
 }
 
 .page-footer__logo-image {
-  .size(128px, 24px);
 }
 
 .page-footer__social {

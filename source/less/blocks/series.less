@@ -2,51 +2,114 @@
 
 }
 
-.series__wrapper {
-
-}
-
 .series__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   list-style: none;
+  @media(min-width: @tablet-width) {
+  }
+
+  @media(min-width: @desktop-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .series__item {
+  width: 280px;
+  min-height: 266px;
+  margin-bottom: 20px;
   background-color: @white-three-color;
+  @media(min-width: @tablet-width) {
+    width: 708px;
+    min-height: 372px;
+  }
+
+  @media(min-width: @desktop-width) {
+    width: 570px;
+    min-height: 372px;
+  }
 }
 
 .series__title {
-  font-size: @body-font-size * 1.72;
-  line-height: @body-line-height * 2.06;
+  font-size: 24px;
+  line-height: 1.54;
+  font-weight: normal;
   text-transform: uppercase;
   color: @black-two-color;
-  .Oswald-regular();
+  @media(min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 1.03;
+  }
+
+  @media(min-width: @desktop-width) {
+
+  }
 }
 
 .series__logo {
   display: block;
-  .size(100px, 100px);
+  width: 100px;
+  height: 100px;
   background-color: @leaf-color;
   &--slim {
-    .size(35px, 49px);
-    background-image: url("../../img/icon-cat-slim.svg");
+    width: 35px;
+    height: 49px;
+    background-image: url("../img/icon-cat-slim.svg");
     background-repeat: no-repeat;
     background-position: center;
+    @media(min-width: @tablet-width) {
+      width: 141px;
+      height: 194px;
+    }
+
+    @media(min-width: @desktop-width) {
+      width: 71px;
+      height: 97px;
+    }
   }
   &--pro {
-    .size(67px, 28px);
-    background-image: url("../../img/icon-cat-pro.svg");
+    width: 67px;
+    height: 28px;
+    background-image: url("../img/icon-cat-pro.svg");
     background-repeat: no-repeat;
     background-position: center;
+    @media(min-width: @tablet-width) {
+      width: 268px;
+      height: 113px;
+    }
+
+    @media(min-width: @desktop-width) {
+      width: 134px;
+      height: 57px;
+    }
   }
 }
 
 .series__text {
-  .ArialMT();
+  font-family: Arial, sans-serif;
+  line-height: 1.29;
+  @media(min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  @media(min-width: @desktop-width) {
+  }
 }
 
 .series__link {
-  font-size: @body-font-size * 1.143;
-  line-height: @body-line-height * 0.889;
+  font-size: 16px;
   text-transform: uppercase;
   color: @black-two-color;
+  @media(min-width: @tablet-width) {
+    font-size: 20px;
+  }
+
+  @media(min-width: @desktop-width) {
+  }
 }

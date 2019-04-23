@@ -1,34 +1,114 @@
 .proposal {
-  margin-bottom: 150px;
+  min-height: 500px;
+  @media(min-width: @tablet-width) {
+  min-height: 800px;
+  }
+
+  @media(min-width: @desktop-width) {
+  }
 }
 
 .proposal__wrapper {
-  background-image: url("../../img/index-background-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-color: @leaf-color;
-  .size(320px, 305px)
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // background-color: @leaf-color;
+  @media(min-width: @tablet-width) {
+  }
+
+  @media(min-width: @desktop-width) {
+    width: 500px;
+  }
+
+  .proposal__wallpaper {
+    position: absolute;
+    z-index: -1;
+    background-image: url("../img/index-background-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-color: @leaf-color;
+    width: 320px;
+    height: 305px;
+    @media(min-width: @tablet-width) {
+      background-image: none;
+      background-color: @white-color;
+    }
+
+    @media(min-width: @desktop-width) {
+      background-image: url("../img/index-background-desktop@1x.jpg");
+      background-repeat: no-repeat;
+      background-color: @leaf-color;
+      width: 720px;
+      height: 696px;
+      margin-left: 660px;
+      margin-top: -70px;
+    }
+  }
 }
 
 .proposal__title {
-  font-size: @body-font-size * 2.572;
-  line-height: @body-line-height * 2;
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 1;
   color: @white-color;
-  .Oswald-regular();
+  @media(min-width: @tablet-width) {
+    font-size: 60px;
+    color: @black-two-color;
+    width: 550px;
+  }
+
+  @media(min-width: @desktop-width) {
+  }
 }
 
 .proposal__text {
-  font-size: @body-font-size;
-  line-height: @body-line-height * 0.778;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
   color: @white-color;
   text-transform: uppercase;
+  @media(min-width: @tablet-width) {
+    font-size: 20px;
+    color: @black-two-color;
+    width: 550px;
+  }
+
+  @media(min-width: @desktop-width) {
+  }
 }
 
 .proposal__image {
-  .size(280px, 270px)
+  background-image: url("../img/index-can-mobile@1x.png");
+  width: 280px;
+  height: 270px;
+  margin-top: 85px;
+  @media(min-width: @tablet-width) {
+    position: absolute;
+    z-index: -1;
+    top: 150px;
+    background-image: url("../img/index-can-tablet@1x.jpg");
+    width: 709px;
+    height: 609px;
+  }
+
+  @media(min-width: @desktop-width) {
+    background-image: url("../img/index-can-desktop@1x.png");
+    width: 552px;
+    height: 500px;
+    top: 0px;
+    margin-left: 400px;
+  }
 }
 
 .proposal__link {
+  line-height: 1.29;
   text-transform: uppercase;
   color: @white-color;
   background-color: @leaf-color;
+  @media(min-width: @tablet-width) {
+    // font-size: 20px;
+    // line-height: 1;
+  }
+
+  @media(min-width: @desktop-width) {
+  }
 }
