@@ -1,21 +1,53 @@
 .page-footer {
-}
-
-.page-footer__wrapper {
+  //Временно
+  min-height: 236px;
   background-color: @white-three-color;
 }
 
+.page-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 280px;
+}
+
 .page-footer__logo {
+
 }
 
 .page-footer__logo-image {
-  .size(128px, 24px);
+  width: 128px;
+  height: 24px;
 }
 
-.page-footer__social {
+.page-footer__link {
 
 }
 
-.page-footer__copyright {
+@media (min-width: @tablet-width) {
+  .page-footer {
+    //Временно
+    min-height: 150px;
+  }
 
+  .page-footer__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 30px;
+    width: 708px;
+  }
+
+  .page-footer__logo {
+
+  }
+
+  .page-footer__logo-image {
+
+  }
+
+  .page-footer__link {
+
+  }
 }

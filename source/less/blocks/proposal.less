@@ -1,34 +1,137 @@
 .proposal {
-  margin-bottom: 150px;
+
+}
+
+.proposal::before {
+  content: "";
+
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 305px;
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: @leaf-color;
 }
 
 .proposal__wrapper {
-  background-image: url("../../img/index-background-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-color: @leaf-color;
-  .size(320px, 305px)
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 280px;
+  //Временно для сетки
+  min-height: 502px;
 }
 
+
 .proposal__title {
-  font-size: @body-font-size * 2.572;
-  line-height: @body-line-height * 2;
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 1;
   color: @white-color;
-  .Oswald-regular();
 }
 
 .proposal__text {
-  font-size: @body-font-size;
-  line-height: @body-line-height * 0.778;
-  color: @white-color;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
   text-transform: uppercase;
+  color: @white-color;
 }
 
 .proposal__image {
-  .size(280px, 270px)
+  width: 280px;
+  height: 270px;
 }
 
 .proposal__link {
+  line-height: 1.29;
   text-transform: uppercase;
   color: @white-color;
   background-color: @leaf-color;
+}
+
+@media(min-width: @tablet-width) {
+  .proposal {
+
+  }
+
+  .proposal::before {
+    display: none;
+  }
+
+  .proposal__wrapper {
+    padding: 0 30px;
+    width: 708px;
+    //Временно для сетки
+    min-height: 867px;
+  }
+
+
+  .proposal__title {
+    font-size: 60px;
+    color: @black-two-color;
+    z-index: 2;
+  }
+
+  .proposal__text {
+    font-size: 20px;
+    color: @black-two-color;
+    width: 550px;
+    z-index: 2;
+  }
+
+  .proposal__image {
+    width: 709px;
+    height: 609px;
+    position: absolute;
+    margin-top: 120px;
+    z-index: 1;
+  }
+
+  .proposal__link {
+    z-index: 2;
+  }
+}
+
+@media(min-width: @desktop-width) {
+  .proposal {
+
+  }
+
+  .proposal::before {
+    display: block;
+    margin-left: 50%;
+    margin-top: -113px;
+    width: 50%;
+    height: 696px;
+  }
+
+  .proposal__wrapper {
+    padding: 0 20px;
+    width: 1220px;
+    //Временно для сетки
+    min-height: 663px;
+  }
+
+
+  .proposal__title {
+
+  }
+
+  .proposal__text {
+
+  }
+
+  .proposal__image {
+    width: 552px;
+    height: 500px;
+    margin-left: 475px;
+  }
+
+  .proposal__link {
+
+  }
 }
